@@ -11,6 +11,9 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', function(message) {
+        client.sendMessage(message.author, "Hello!");
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
