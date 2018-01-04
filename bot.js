@@ -15,10 +15,11 @@ client.on('guildMemberAdd', member => {
     member.guild.channels.get('390028038688997379').send('**' + member.user.username + '**, Bienvenue dans la ParasiteSquad! Prepare toi a faire du sale :fire:'); 
 });
 
-client.on('guildMemberAdd',(member) => { member.addRole('398521427290095625-').catch(console.error); 
-});
+var role = member.guild.role.find('name', 'god')
+;
 
-
+member.addRole(role)
+;
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
