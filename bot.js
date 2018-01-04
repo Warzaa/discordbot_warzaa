@@ -12,11 +12,11 @@ client.on('message', message => {
 });
 
 client.on('guildMemberAdd', member => {
-    member.guild.channels.get('channelID').send('**' + member.user.username + '**, a rejoint la ParasiteSquad'); 
+    member.guild.channels.get('390028038688997379').send('**' + member.user.username + '**, a rejoint la ParasiteSquad'); 
 });
 
 client.on('guildMemberRemove', member => {
-    member.guild.channels.get('channelID').send('**' + member.user.username + '**, a quitté la ParasiteSquad');
+    member.guild.channels.get('390028038688997379').send('**' + member.user.username + '**, a quitté la ParasiteSquad');
     //
 });
 
