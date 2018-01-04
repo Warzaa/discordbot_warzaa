@@ -11,9 +11,13 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', function(message) {
-        client.sendMessage(message.author, "Hello!");
+bot.on('guildMemberAdd', member => {
+       member.guild.defaultChannel.send(`Bienvenue sur le serveur de la ParasiteSquad, ${member}!`);
+       console.log(`${member.user.username} has joined`);
 });
+
+
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
