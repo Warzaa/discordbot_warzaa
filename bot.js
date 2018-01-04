@@ -11,7 +11,7 @@ client.on('message', message => {
   	}
 });
 
-bot.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', member => {
        member.guild.defaultChannel.send(`Bienvenue sur le serveur de la ParasiteSquad, ${member}!`);
        console.log(`${member.user.username} has joined`);
 });
