@@ -12,8 +12,12 @@ client.on('message', message => {
 });
 
 client.on('guildMemberAdd', member => {
-       member.guild.defaultChannel.send(`Bienvenue sur le serveur de la ParasiteSquad, ${member}!`);
-       console.log(`${member.user.username} has joined`);
+    member.guild.channels.get('channelID').send('**' + member.user.username + '**, a rejoint la ParasiteSquad'); 
+});
+
+client.on('guildMemberRemove', member => {
+    member.guild.channels.get('channelID').send('**' + member.user.username + '**, a quitté la ParasiteSquad');
+    //
 });
 
 
