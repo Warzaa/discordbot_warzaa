@@ -12,7 +12,7 @@ client.on('message', message => {
 });
 
 client.on('guildMemberAdd', member => {
-    member.guild.channels.get('363348162473099266').send('**' + member.user.username + '**, Bienvenue dans la ParasiteSquad! Prepare toi a faire du sale :fire:'); 
+    member.guild.channels.get('363348162473099266').send('Un Pokemon Sauvage Nommé **' + member.user.username + '** Est Venu(e)'); 
 });
 
 // THIS  MUST  BE  THIS  WAY
