@@ -12,7 +12,7 @@ client.on('message', message => {
 });
 
 client.on('guildMemberAdd', member => {
-    member.guild.channels.get('390028038688997379').send('**' + member.user.username + '**, Bienvenue dans la ParasiteSquad! Prepare toi a faire du sale :fire:'); 
+    member.guild.channels.get('363348162473099266').send('**' + member.user.username + '**, Bienvenue dans la ParasiteSquad! Prepare toi a faire du sale :fire:'); 
 });
 
 // THIS  MUST  BE  THIS  WAY
